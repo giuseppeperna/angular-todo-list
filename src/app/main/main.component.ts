@@ -6,7 +6,6 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-  @Input() linkName = 'An Item';
   cards = [];
 
   constructor() { }

@@ -1,5 +1,8 @@
 <div class="container  main-section">
+<!--  To-do list input field-->
   <app-card-form (cardCreation)="addCard($event)"></app-card-form>
+
+<!--  To-do elements-->
   <div *ngIf="cards.length > 0; else content" class="row d-flex justify-content-center flex-column todo-container">
     <div *ngFor="let card of cards; let i = index"  class="col-xs-12 d-flex justify-content-center">
       <div class="todo-el d-flex flex-row align-items-center justify-content-between" [ngClass]="{'card-completed' : card.status === true}" (click)="card.status = !card.status;">
@@ -13,6 +16,7 @@
       </div>
     </div>
   </div>
+<!--  Empty list message-->
   <ng-template #content>
     <p class="text-center empty-list">Your list is empty!</p>
   </ng-template>

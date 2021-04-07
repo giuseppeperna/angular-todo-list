@@ -1,4 +1,4 @@
-import {Component, OnInit, Output, EventEmitter, ViewChild, ElementRef, Input} from '@angular/core';
+import {Component, OnInit, Output, EventEmitter, ViewChild, ElementRef} from '@angular/core';
 import {Card} from '../models/card.model';
 
 @Component({

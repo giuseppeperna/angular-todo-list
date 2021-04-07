@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -15,7 +15,6 @@ export class MainComponent implements OnInit {
 
   addCard(card: any): void {
     this.cards.push(card);
-    console.log(this.cards);
   }
 
   deleteCard(index: number): void {

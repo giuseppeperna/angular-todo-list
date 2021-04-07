@@ -20,7 +20,6 @@ export class CardFormComponent implements OnInit {
       const newCard = new Card(title.value, false);
       this.cardCreation.emit(newCard);
       title.value = '';
-      console.log(newCard);
     }
   }
 

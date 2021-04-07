@@ -1,0 +1,20 @@
+<div class="container  main-section">
+  <app-card-form (cardCreation)="addCard($event)"></app-card-form>
+  <div *ngIf="cards.length > 0; else content" class="row d-flex justify-content-center flex-column todo-container">
+    <div *ngFor="let card of cards; let i = index"  class="col-xs-12 d-flex justify-content-center">
+      <div class="todo-el d-flex flex-row align-items-center justify-content-between" [ngClass]="{'card-completed' : card.status === true}" (click)="card.status = !card.status;">
+        <div class="d-flex align-items-center">
+          <span><i [ngClass]="card.status === true ? 'fas fa-check-circle checked-el' : 'far fa-circle'"></i></span>
+          <h5 class="todo-el-title truncate">{{ card.title }}</h5>
+        </div>
+        <div>
+          <i class="fas fa-trash-alt delete-todo" (click)="deleteCard(i)"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ng-template #content>
+    <p class="text-center empty-list">Your list is empty!</p>
+  </ng-template>
+</div>
+

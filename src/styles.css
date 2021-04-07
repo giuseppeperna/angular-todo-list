@@ -1,0 +1,9 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background: linear-gradient(130deg, rgba(237,237,237,1) 0%, rgba(249,249,249,1) 47%, rgba(235,235,235,1) 100%);
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+}
+
+

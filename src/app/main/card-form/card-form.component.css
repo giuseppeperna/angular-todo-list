@@ -1,0 +1,46 @@
+.form-container {
+  margin-top: 25px;
+}
+
+.todo-input-container {
+  margin-bottom: 25px;
+}
+
+.todo-input {
+  width: 600px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid lightgrey;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.todo-input:focus {
+  outline: none;
+}
+
+.title-to-do {
+  padding: 50px 0;
+  font-weight: 500;
+}
+
+.todo-button {
+  height: 40px;
+  border-radius: 0 5px 5px 0;
+  padding: 0 15px;
+  font-size: 20px;
+  background-color: #c6061c;
+  color: white;
+  border: none;
+  transition: 0.5s ease;
+}
+
+.todo-button:hover {
+  background-color: #a70921;
+  transition: background-color 0.4s ease;
+}
+
+.title-container img {
+  width: 80px;
+}

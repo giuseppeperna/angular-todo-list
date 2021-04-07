@@ -1,0 +1,75 @@
+.main-section{
+  padding: 50px 0 200px 0;
+  min-height: 100vh;
+}
+
+.card {
+  margin: 0 15px;
+}
+
+.todo-container {
+  width: 50%;
+  margin: auto;
+}
+
+.todo-el {
+  border: 1px solid lightgrey;
+  background-color: #fff;
+  width: 90%;
+  min-width: 300px;
+  margin: 15px 0;
+  height: 60px;
+  border-radius: 5px;
+  padding: 0 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+  opacity: 1;
+  animation-name: opacityEl;
+  animation-duration: 1s;
+}
+
+.truncate {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes opacityEl {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.todo-el:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+.card-completed {
+  background-color: #e7e7e7;
+  text-decoration-line: line-through;
+}
+
+.todo-el-title {
+  margin: 0 0 0 15px;
+}
+
+.todo-el span > i {
+  font-size: 20px;
+}
+
+.delete-todo {
+  color: #c6061c;
+  font-size: 20px;
+}
+
+.checked-el {
+  color: #25c125;
+}
+
+.empty-list {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 50px;
+}

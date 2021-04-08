@@ -62,6 +62,12 @@
 .delete-todo {
   color: #c6061c;
   font-size: 20px;
+  transition: 0.4s ease;
+}
+
+.delete-todo:hover {
+  color: #a70921;
+  transition: color 0.4s ease;
 }
 
 .checked-el {

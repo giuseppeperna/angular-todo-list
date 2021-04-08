@@ -1,5 +1,6 @@
 footer {
-  background-color: #c6061c;
+  /*background-color: #c6061c;*/
+  background: linear-gradient(0deg, rgba(198,6,28,1) 0%, rgba(168,3,22,1) 100%);
   padding: 20px 0;
   clear: both;
   position: relative;
@@ -8,21 +9,20 @@ footer {
 }
 
 footer a {
-  font-size: 50px;
+  font-size: 2.8rem;
   display: inline-block;
   color: #fff;
   border-radius:50%;
   line-height: 1;
   padding: 8px 0;
-  margin-right: 4px;
   text-align: center;
   width: 36px;
   height: 36px;
-  transition: .3s;
-  margin-bottom: 30px;
+  transition: 0.4s ease;
+  margin: 5px 20px 30px 20px;
 }
 
 footer a:hover {
-  transform: scale(1.1);
+  color: #d7d7d7;
   transition: 0.4s ease;
 }
